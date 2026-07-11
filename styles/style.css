@@ -1,9 +1,10 @@
 * {
-    margin: 0;
-    padding: auto;
+    max-width: 1200px;
+    margin: auto;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -11,6 +12,7 @@
     background-color: whitesmoke;
     padding: 20px 40px;
 }
+
 .menu-items {
     display: flex;
     justify-content: space-between;
@@ -18,21 +20,26 @@
     padding: auto;
     text-decoration: none;
 }
+
 .menu-items a:hover {
     background-color: rgb(217, 221, 221);
 }
+
 a {
     text-decoration: none;
     list-style: none;
 }
+
 li {
     list-style: none;
     text-align: center;
 }
+
 nav ul {
     display: flex;
     gap: 20px;
 }
+
 .reg-button {
     background-color: blue;
     color: white;
@@ -41,24 +48,28 @@ nav ul {
     border-radius: 15px;
     cursor: pointer;
 }
-.reg-button:hover{
+
+.reg-button:hover {
     background-color: red;
 }
+
 /* little help from AI */
 .hero-items {
     max-width: 1200px;
-    height: auto;
+    height: 90vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     color: white;
     text-align: center;
-    background-image: url('/photos/banner.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/photos/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
     padding-bottom: 400px;
+    background-position: center;
 }
+
 /* hero items er bhitore kaaj */
 .hero-content {
     display: flex;
@@ -67,15 +78,18 @@ nav ul {
     width: 800px;
     height: 80%;
 }
+
 .hero-content h1 {
     font-size: 4rem;
     font-weight: 500%;
     margin-bottom: 15px;
 }
+
 .hero-content p {
     height: 25%;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .reg-btn {
     background-color: blue;
     justify-content: space-around;
@@ -85,6 +99,18 @@ nav ul {
     padding: 15px 30px;
     cursor: pointer;
 }
-.reg-btn:hover{
+
+.reg-btn:hover {
     background-color: red;
+}
+.speakers-sections {
+    max-width: 1200px;
+    width: 100px;
+    margin: 80px auto;
+}
+/* speaker ke grid kortesi */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
