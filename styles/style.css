@@ -62,7 +62,7 @@ nav ul {
     align-items: center;
     color: white;
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('/photos/banner.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/photos/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 20px;
@@ -103,14 +103,89 @@ nav ul {
 .reg-btn:hover {
     background-color: red;
 }
-.speakers-sections {
-    max-width: 1200px;
-    width: 100px;
-    margin: 80px auto;
+
+.bg-color {
+    color: black;
 }
-/* speaker ke grid kortesi */
-.container {
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 50px auto;
+}
+
+.container-all {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    height: 80vh;
+    margin-bottom: 50%;
+    gap: 50px;
+    row-gap: 150px;
+}
+
+/* ai theke niyechi */
+.speaker-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    background: white;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.speaker-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.container {
+    padding-left: 20px;
+    padding-block: 20px;
+}
+
+.container small {
+    font-size: 12px;
+    font-weight: 500%;
+}
+
+.container h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.container p {
+    font-size: 15px;
+}
+
+.speaker-card :hover {
+    box-shadow: 0 50px 80px rgba(153, 221, 97, 0.12);
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    
+}
+
+.card-container .card {
+    background-color: #E5E7EB;
+    padding: 120px;
+    padding-inline: 100px;
+    border-radius: 10px;
+}
+
+.start {
+    text-align: center;
+    justify-content: space-around;
+}
+
+.card{
+    margin-top: 20px;
 }
